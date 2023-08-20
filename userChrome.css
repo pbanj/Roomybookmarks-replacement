@@ -6,20 +6,11 @@
     padding-right: 0 !important;
     padding-left: 0 !important; 
 }
-toolbarbutton.bookmark-item .toolbarbutton-text{
-    display: none !important;
+#PlacesToolbarItems > .bookmark-item:not(:hover):not([open="true"]) > .toolbarbutton-text {
+  display: none !important;
 }
-toolbarbutton.bookmark-item .toolbarbutton-icon{
-    margin-left: 2px !important;
-}
-#PlacesToolbarItems > .bookmark-item > .toolbarbutton-icon[label]:not([label=""]) {
-    margin-inline-end: 2px !important;
-}
-toolbarbutton.subviewbutton.subviewbutton-iconic .toolbarbutton-text{
-    display: -moz-box !important;
-}
-/* --- [1] --- */
-toolbarbutton.bookmark-item:hover:not(.subviewbutton):not([disabled="true"]):not([open]) .toolbarbutton-text{
-    display: -moz-box !important;
+
+#PlacesToolbarItems > .bookmark-item:not(:hover):not([open="true"]) > .toolbarbutton-icon[label]:not([label=""]) {
+  margin-inline-end: 2px !important;
 }
 /* --- [/1] --- */
